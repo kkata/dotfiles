@@ -35,6 +35,9 @@ https://itunes.apple.com/jp/app/bettersnaptool/id417375580?mt=12
 PixelSnap
 https://getpixelsnap.com/
 
+wappalyzer
+https://www.wappalyzer.com/
+
 ## Git
 
 gitHubでssh接続する手順~公開鍵・秘密鍵の生成から~

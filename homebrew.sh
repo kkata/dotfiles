@@ -37,6 +37,7 @@ packages=(
     # Shell
     zsh
     peco
+    tmux
 
     # Git
     git
@@ -62,6 +63,7 @@ packages=(
     #ndenv homebrewではいらなかった
     #node-build
     pyenv
+    go
 )
 
 echo "installing binaries..."
