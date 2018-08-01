@@ -56,6 +56,8 @@ packages=(
     curl
     tree
     wget
+    ag
+    fd
 
     # Languages
     rbenv
