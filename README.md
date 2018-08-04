@@ -9,6 +9,8 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 デフォルトのshellをzshにする
 `chsh -s /bin/zsh`
 
+https://github.com/KeitaNakamura/neodark.vim
+
 ## sublime
 http://qiita.com/matsu_chara/items/b58564bba37e81637057
 
@@ -38,13 +40,13 @@ https://getpixelsnap.com/
 wappalyzer
 https://www.wappalyzer.com/
 
+istatmenus
+https://bjango.com/mac/istatmenus/
+
 ## Git
 
-gitHubでssh接続する手順~公開鍵・秘密鍵の生成から~
+gitHubでssh接続する手順
 http://qiita.com/shizuma/items/2b2f873a0034839e47ce
-
-Gitを使い始めたらやっておきたい便利な設定いろいろ
-http://blog.asial.co.jp/845
 
 Git submodule の基礎
 http://qiita.com/sotarok/items/0d525e568a6088f6f6bb
