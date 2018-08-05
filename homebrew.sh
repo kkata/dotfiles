@@ -54,6 +54,7 @@ packages=(
     wget
     ag
     fd
+    nano
 
     # Languages
     rbenv
