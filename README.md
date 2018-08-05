@@ -6,16 +6,14 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 
 を参考
 
-command line tool はここ https://developer.apple.com/downloads/index.action
-
 ## 構築
-
-1. デフォルトのshellをzshにする
-  `chsh -s /bin/zsh`
-2. homebrewのインストール
-  `homebrew.sh`
-3. dotfileのセットアップ
-  `chmod 755 setup.sh && setup.sh`
+1. Xcodeと[command line tool](https://developer.apple.com/downloads/index.action)をインストール
+2. デフォルトのshellをzshにする `chsh -s /bin/zsh`
+  shellの再起動 `exec $SHELL -l`
+3. homebrewのインストール
+  dotfilesディレクトリで `homebrew.sh`
+4. dotfileのセットアップ
+  dotfilesディレクトリで `chmod 755 setup.sh && setup.sh`
 
 ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
@@ -26,6 +24,13 @@ http://qiita.com/matsu_chara/items/b58564bba37e81637057
 https://bitbucket.org/kkata/sublime_setting
 
 ## Mac
+
+```
+隠しファイルや隠しフォルダを表示
+defaults write com.apple.finder AppleShowAllFiles -bool true
+Finder再起動
+killall Finder
+```
 
 Macで.DS_Storeファイルを作らない方法&削除ツール
 http://blancbooth.com/archives/62
