@@ -28,7 +28,7 @@ packages=(
     findutils
 
     # recent versions of some OS X tools
-    homebrew/dupes/grep
+    # homebrew/dupes/grep
 
     # Shell
     zsh
@@ -68,7 +68,7 @@ echo "installing binaries..."
 brew install ${packages[@]} && brew cleanup
 
 # Casks
-brew tap sanemat/font
+brew tap caskroom/fonts
 
 # Apps
 apps=(
