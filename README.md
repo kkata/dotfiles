@@ -13,7 +13,7 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 3. homebrewのインストール
   dotfilesディレクトリで `homebrew.sh`
 4. dotfileのセットアップ
-  dotfilesディレクトリで `chmod 755 setup.sh && setup.sh`
+  dotfilesディレクトリで `setup.sh`
 
 ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
