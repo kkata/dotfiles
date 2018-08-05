@@ -17,10 +17,10 @@ if [ "${ANS}" = "Y" ]; then
 fi
 
 # Add Repository
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew tap homebrew/apache
+# brew tap homebrew/dupes
+#brew tap homebrew/versions
+#brew tap homebrew/homebrew-php
+#brew tap homebrew/apache
 brew tap sanemat/font
 
 packages=(
@@ -72,7 +72,7 @@ echo "installing binaries..."
 brew install ${packages[@]} && brew cleanup
 
 # Casks
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # Apps
 apps=(

@@ -6,6 +6,8 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 
 を参考
 
+command line tool はここ https://developer.apple.com/downloads/index.action
+
 デフォルトのshellをzshにする
 `chsh -s /bin/zsh`
 
@@ -44,6 +46,13 @@ istatmenus
 https://bjango.com/mac/istatmenus/
 
 ## Git
+
+```
+$ mkdir ~/.ssh
+$ cd ~/.ssh
+$ ssh-keygen -t rsa
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
 
 gitHubでssh接続する手順
 http://qiita.com/shizuma/items/2b2f873a0034839e47ce
