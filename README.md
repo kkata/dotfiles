@@ -8,10 +8,16 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 
 command line tool はここ https://developer.apple.com/downloads/index.action
 
-デフォルトのshellをzshにする
-`chsh -s /bin/zsh`
+## 構築
 
-https://github.com/KeitaNakamura/neodark.vim
+1. デフォルトのshellをzshにする
+  `chsh -s /bin/zsh`
+2. homebrewのインストール
+  `homebrew.sh`
+3. dotfileのセットアップ
+  `chmod 755 setup.sh && setup.sh`
+
+ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
 ## sublime
 http://qiita.com/matsu_chara/items/b58564bba37e81637057

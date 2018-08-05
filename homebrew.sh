@@ -46,7 +46,7 @@ packages=(
     pkg-config
     pcre
     gperftools
-    Caskroom/cask/xquartz
+    # Caskroom/cask/xquartz
 
     # Tools
     curl

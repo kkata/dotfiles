@@ -13,12 +13,9 @@ fi
 # Customize to your needs...
 eval "$(rbenv init -)"
 
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
-
-
-export PATH=$PATH:./node_modules/.bin
-export PATH=$PATH:../node_modules/.bin
+# ndenv
+# export PATH="$HOME/.ndenv/bin:$PATH"
+# eval "$(ndenv init -)"
 
 eval "$(pyenv init -)"
 
@@ -226,8 +223,8 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 
-
-eval "$(fasd --init posix-alias zsh-hook)"
+# SSHFS
+# eval "$(fasd --init posix-alias zsh-hook)"
 
 
 alias gc='git branch --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'
