@@ -17,11 +17,7 @@ if [ "${ANS}" = "Y" ]; then
 fi
 
 # Add Repository
-# brew tap homebrew/dupes
-#brew tap homebrew/versions
-#brew tap homebrew/homebrew-php
-#brew tap homebrew/apache
-brew tap sanemat/font
+brew tap caskroom/fonts
 
 packages=(
 
@@ -50,7 +46,7 @@ packages=(
     pkg-config
     pcre
     gperftools
-    gdbm
+    Caskroom/cask/xquartz
 
     # Tools
     curl
@@ -72,7 +68,7 @@ echo "installing binaries..."
 brew install ${packages[@]} && brew cleanup
 
 # Casks
-brew tap caskroom/cask
+brew tap sanemat/font
 
 # Apps
 apps=(
