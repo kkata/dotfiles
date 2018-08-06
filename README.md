@@ -13,7 +13,9 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 3. dotfileのセットアップ<br>
   dotfilesディレクトリで `./setup.sh`
 4. デフォルトのshellをzshにする `chsh -s /bin/zsh`<br>
-  shellの再起動 `exec $SHELL -l`
+
+### 問題
+`dotfiles/prezto/modules/prompt/external` のsubmodule内が空のままだったので `git submodule init` `git submodule update` する必要あり。
 
 ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
@@ -31,6 +33,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 Finder再起動
 killall Finder
 ```
+shellの再起動 `exec $SHELL -l`
 
 Macで.DS_Storeファイルを作らない方法&削除ツール<br>
 http://blancbooth.com/archives/62
