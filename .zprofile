@@ -72,9 +72,7 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # 初回シェル時のみ tmux実行
-if [ $SHLVL = 1 ]; then
-  tmux
-fi
+# if [ $SHLVL = 1 ]; then
+#  tmux
+# fi

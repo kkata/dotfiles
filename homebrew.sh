@@ -81,7 +81,7 @@ apps=(
     # firefox
 
     # VM
-    virtualbox
+    # virtualbox
 
     # Java
 
