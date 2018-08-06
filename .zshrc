@@ -14,8 +14,12 @@ fi
 eval "$(rbenv init -)"
 
 # ndenv
-# export PATH="$HOME/.ndenv/bin:$PATH"
-# eval "$(ndenv init -)"
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
+
+# rbenv
+export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
+eval "$(rbenv init -)"
 
 eval "$(pyenv init -)"
 
