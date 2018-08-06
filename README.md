@@ -8,12 +8,12 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 
 ## 構築
 1. Xcodeと[command line tool](https://developer.apple.com/downloads/index.action)をインストール
-2. デフォルトのshellをzshにする `chsh -s /bin/zsh`<br>
-  shellの再起動 `exec $SHELL -l`
-3. homebrewのインストール<br>
+2. homebrewのインストール<br>
   dotfilesディレクトリで `./homebrew.sh`
-4. dotfileのセットアップ<br>
+3. dotfileのセットアップ<br>
   dotfilesディレクトリで `./setup.sh`
+4. デフォルトのshellをzshにする `chsh -s /bin/zsh`<br>
+  shellの再起動 `exec $SHELL -l`
 
 ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
