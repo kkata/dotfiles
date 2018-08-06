@@ -11,9 +11,9 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
 2. デフォルトのshellをzshにする `chsh -s /bin/zsh`<br>
   shellの再起動 `exec $SHELL -l`
 3. homebrewのインストール<br>
-  dotfilesディレクトリで `homebrew.sh`
+  dotfilesディレクトリで `./homebrew.sh`
 4. dotfileのセットアップ<br>
-  dotfilesディレクトリで `setup.sh`
+  dotfilesディレクトリで `./setup.sh`
 
 ターミナルのカラー https://github.com/KeitaNakamura/neodark.vim
 
