@@ -34,6 +34,7 @@ packages=(
     zsh
     peco
     tmux
+    reattach-to-user-namespace
 
     # Git
     git
@@ -55,6 +56,7 @@ packages=(
     ag
     fd
     nano
+    direnv
 
     # Languages
     rbenv

@@ -11,7 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-eval "$(rbenv init -)"
 
 # ndenv
 export PATH="$HOME/.ndenv/bin:$PATH"
@@ -21,11 +20,25 @@ eval "$(ndenv init -)"
 export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 
+# pyenv
+export PATH="$HOME/.pyenv/shims:$PATH"
 eval "$(pyenv init -)"
+
+# direnv
+export EDITOR=nano
+eval "$(direnv hook zsh)"
 
 # nvm
 # export NVM_DIR="$HOME/.nvm"
 # . "/usr/local/opt/nvm/nvm.sh"
+
+# Go
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
+# Java
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
 
 # original command
 if [ -d $HOME/bin ]
@@ -33,10 +46,6 @@ if [ -d $HOME/bin ]
     PATH=$PATH:$HOME/bin
     export PATH
 fi
-
-export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
-
 
 # vcs_info 設定
 
