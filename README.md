@@ -57,6 +57,9 @@ $ ssh-keygen -t rsa
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
+trailer  
+http://ptsochantaris.github.io/trailer/
+
 gitHubでssh接続する手順  
 http://qiita.com/shizuma/items/2b2f873a0034839e47ce
 
