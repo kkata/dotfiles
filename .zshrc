@@ -25,8 +25,8 @@ export PATH="$HOME/.pyenv/shims:$PATH"
 eval "$(pyenv init -)"
 
 # direnv
-export EDITOR=nano
-eval "$(direnv hook zsh)"
+# export EDITOR=nano
+# eval "$(direnv hook zsh)"
 
 # nvm
 # export NVM_DIR="$HOME/.nvm"

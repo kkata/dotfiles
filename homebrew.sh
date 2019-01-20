@@ -56,12 +56,12 @@ packages=(
     ag
     fd
     nano
-    direnv
+    # direnv
 
     # Languages
     rbenv
     ruby-build
-    #ndenv homebrewではいらなかった
+    #ndenv homebrewで入らない
     #node-build
     pyenv
     go
