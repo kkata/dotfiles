@@ -12,9 +12,9 @@ fi
 
 # Customize to your needs...
 
-# ndenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # rbenv
 export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"

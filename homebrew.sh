@@ -61,8 +61,7 @@ packages=(
     # Languages
     rbenv
     ruby-build
-    #ndenv homebrewで入らない
-    #node-build
+    nodenv
     pyenv
     go
 )
