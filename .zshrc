@@ -247,3 +247,4 @@ alias gc='git branch --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/or
 
 alias brew="env PATH=${PATH/\/Users\/user_name\/\.pyenv\/shims:/} brew"
 
+alias g='cd $(ghq root)/$(ghq list | peco)'
