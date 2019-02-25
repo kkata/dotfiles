@@ -37,8 +37,11 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
 # Java
-export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
+
+# Android
+export ANDROID_HOME=“$HOME/Library/Android/sdk”
 
 # original command
 if [ -d $HOME/bin ]
