@@ -38,6 +38,7 @@ packages=(
 
     # Git
     git
+    ghq
 
     # Utils
     autoconf
