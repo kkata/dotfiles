@@ -35,6 +35,7 @@ packages=(
     peco
     tmux
     reattach-to-user-namespace
+    zsh-autosuggestions
 
     # Git
     git
