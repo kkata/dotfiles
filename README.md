@@ -12,6 +12,9 @@ http://oinume.hatenablog.com/entry/improve-my-terminal-with-zsh-prezto
   dotfilesディレクトリで `./setup.sh`  
 4. デフォルトのshellをzshにする `chsh -s /bin/zsh`
 
+おまけ  
+https://github.com/sindresorhus/quick-look-plugins
+
 ### 問題
 `dotfiles/prezto/modules/prompt/external` のsubmodule内が空のままだったので `git submodule init` `git submodule update` する必要あり。
 

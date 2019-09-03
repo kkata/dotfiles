@@ -25,7 +25,8 @@ cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\
 	attributesfile = ~/.gitattributes
 	editor = nano
 	symlinks = true
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/kk/.gitignore_global
+	pager = less
 [diff "image"]
 	command = ~/bin/git-imgdiff
 [filter "lfs"]
@@ -34,5 +35,16 @@ cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 
+[diff "sjis"]
+	textconv = iconv -f sjis
+
 [ghq]
     root = ~/.ghq
+# [difftool "sourcetree"]
+# 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+# 	path =
+# [mergetool "sourcetree"]
+# 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+# 	trustExitCode = true
+# [commit]
+# 	template = /Users/kk/.stCommitMsg

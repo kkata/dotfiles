@@ -12,6 +12,9 @@ fi
 
 # Customize to your needs...
 
+# sjisの文字化け対策
+# export GIT_PAGER="LESSCHARSET=utf-8 less"
+
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
