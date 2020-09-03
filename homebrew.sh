@@ -40,6 +40,7 @@ packages=(
     # Git
     git
     ghq
+    git-delta
 
     # Utils
     autoconf

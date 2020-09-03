@@ -26,7 +26,7 @@ cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\
 	editor = nano
 	symlinks = true
 	excludesfile = /Users/kk/.gitignore_global
-	pager = less
+	pager = delta --dark
 [diff "image"]
 	command = ~/bin/git-imgdiff
 [filter "lfs"]
