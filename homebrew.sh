@@ -32,7 +32,8 @@ packages=(
 
     # Shell
     zsh
-    peco
+    # peco
+    fzf
     tmux
     reattach-to-user-namespace
     zsh-autosuggestions
