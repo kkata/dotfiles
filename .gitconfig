@@ -26,6 +26,12 @@
 [diff "sjis"]
 	textconv = iconv -f sjis
 
+[diff]
+	tool = default-difftool
+
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+
 [ghq]
     root = ~/.ghq
 
