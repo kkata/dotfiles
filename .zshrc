@@ -43,11 +43,11 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
 # Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-PATH=${JAVA_HOME}/bin:${PATH}
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+# PATH=${JAVA_HOME}/bin:${PATH}
 
 # Android
-export ANDROID_HOME=“$HOME/Library/Android/sdk”
+# export ANDROID_HOME=“$HOME/Library/Android/sdk”
 
 # original command
 if [ -d $HOME/bin ]
@@ -234,28 +234,18 @@ function _update_vcs_info_msg() {
 }
 # add-zsh-hook precmd _update_vcs_info_msg
 
-
-# peco
-# peco-select-history() {
-#     BUFFER=$(history 1 | sort -k1,1nr | perl -ne 'BEGIN { my @lines = (); } s/^\s*\d+\*?\s*//; $in=$_; if (!(grep {$in eq $_} @lines)) { push(@lines, $in); print $in; }' | peco --query "$LBUFFER")
-#     CURSOR=${#BUFFER}
-#     zle reset-prompt
-# }
-# zle -N peco-select-history
-# bindkey '^r' peco-select-history
-
-
 # SSHFS
 # eval "$(fasd --init posix-alias zsh-hook)"
 
-
-# alias gc='git branch --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'
-
 alias brew="env PATH=${PATH/\/Users\/user_name\/\.pyenv\/shims:/} brew"
 
-# alias g='cd $(ghq root)/$(ghq list | peco)'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+function fzf-select-history() {
+    BUFFER=$(history -n -r 1 | fzf --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N fzf-select-history
+bindkey '^r' fzf-select-history
 
 # Gitリポジトリに移動する
 alias g='cd $(ghq root)/$(ghq list | fzf)'

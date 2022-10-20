@@ -17,7 +17,7 @@ if [ "${ANS}" = "Y" ]; then
 fi
 
 # Add Repository
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
 packages=(
 
@@ -60,6 +60,7 @@ packages=(
     ag
     fd
     nano
+    hub
     # direnv
 
     # Languages
@@ -72,9 +73,6 @@ packages=(
 
 echo "installing binaries..."
 brew install ${packages[@]} && brew cleanup
-
-# Casks
-brew tap caskroom/fonts
 
 # Apps
 apps=(
@@ -102,13 +100,14 @@ apps=(
 
 # Install apps to /Applications
 echo "installing applications..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --appdir="/Applications" ${apps[@]} --cask
 
 # fonts
 fonts=(
     font-ricty-diminished
+    font-plemol-jp
 )
 
 # install fonts
 echo "installing fonts..."
-brew cask install ${fonts[@]}
+brew install ${fonts[@]} --cask
