@@ -252,3 +252,11 @@ alias g='cd $(ghq root)/$(ghq list | fzf)'
 
 # Gitブランチを切り替える
 alias gc='git branch --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | fzf | xargs git checkout'
+
+# pnpm
+export PNPM_HOME="/Users/kk/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

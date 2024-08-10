@@ -8,6 +8,7 @@
 	ci = commit
 	st = status
 	br = branch
+	pushf = push --force-with-lease --force-if-includes
 
 [core]
 	attributesfile = ~/.gitattributes
@@ -35,3 +36,5 @@
 [ghq]
     root = ~/.ghq
 
+[init]
+	defaultBranc = main
